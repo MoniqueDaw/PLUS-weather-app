@@ -20,5 +20,103 @@
       referrerpolicy="no-referrer"
     ></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="current-conditions">
+        <div class="city-container">
+          <div class="row">
+            <div class="col-2">Vancouver</div>
+            <div class="col-2">Edmonton</div>
+            <div class="col-2">Toronto</div>
+            <div class="col-2">Ottawa</div>
+            <div class="col-2">N.Brunswick</div>
+          </div>
+        </div>
+        <form class="d-flex justify-content-center mb-3" id="search-form">
+          <div class="row">
+            <div class="col-4">
+              <input
+                type="search"
+                class="form-control shadow-sm"
+                placeholder="Enter a city"
+                autocomplete="off"
+                id="city-input"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="submit"
+                value="search"
+                class="btn btn-primary w-100"
+              />
+            </div>
+            <div class="col-4">
+              <button class="btn btn-secondary" id="current-location-button">
+                Your location
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="featuredCity">
+          <h1 id="current-city"></h1>
+          <h2 id="current-date"></h2>
+          <ul class="currentInfo">
+            <li id="current-weather-img">☁</li>
+            <li id="temp">23°C</li>
+            <li id="description"></li>
+          </ul>
+          <div class="current-conditions-group">
+            <div class="row">
+              <div class="col-6">
+                wind speed<br /><span id="wind"></span>km/h
+              </div>
+              <div class="col-6">
+                humidity<br /><span id="humidity"></span>%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="forcast">
+        <h4>5-day forcast</h4>
+        <div class="row">
+          <div class="col-2">
+            <div class="card-body">
+              <h6 class="card-title">Friday</h6>
+              <p class="card-text">🌙<br />14°</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card-body">
+              <h6 class="card-title">Saturday</h6>
+              <p class="card-text">🌙<br />14°</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card-body">
+              <h6 class="card-title">Sunday</h6>
+              <p class="card-text">🌙<br />14°</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card-body">
+              <h6 class="card-title">Monday</h6>
+              <p class="card-text">🌙<br />14°</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card-body">
+              <h6 class="card-title">Tuesday</h6>
+              <p class="card-text">🌙<br />14°</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="footer">Coded by Monique Dawod </span>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
 </html>
