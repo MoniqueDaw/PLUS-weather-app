@@ -1,7 +1,5 @@
 let now = new Date();
 
-let currentDate = document.querySelector("#currentDate");
-
 let date = now.getDate();
 let hours = now.getHours();
 if (hours < 10) {
