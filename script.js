@@ -22,12 +22,13 @@ let day = days[now.getDay()];
 let h2 = document.querySelector("h2");
 h2.innerHTML = `${day} ${date} ${hours}:${minutes}`;
 
-function showTemp(response) {
+function showTemperature(response) {
+  console.log(response.data);
   let temp = Math.round(response.data.main.temp);
-  let temperatureElement = document.querySelector("#temp");
-  temperatureElement.innerHTML = `${temp}C`;
-  let currentCity = document.querySelector("#current-city");
-  currentCity.innerHTML = response.data.name;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = `${temperature}°C`;
+  let city = document.querySelector("#city");
+  city.innerHTML = response.data.name;
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
   let windElement = document.querySelector("#wind");
@@ -55,8 +56,8 @@ currentLocationButton.addEventListener("click", getPosition);
 function searchCity(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city-input");
-  let currentCity = document.querySelector("#current-city");
-  currentCity.innerHTML = `${cityInput.value}`;
+  let city = document.querySelector("#city");
+  city.innerHTML = `${cityInput.value}`;
 
   search(cityInput.value);
 }
