@@ -26,7 +26,6 @@ function displayWeatherCondition(response) {
   let temperatureElement = document.querySelector("#temperature");
 
   celciusTemperature = response.data.main.temp;
-  temperatureElement.innerHTML = Math.round(celciusTemperature);
 
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.name;

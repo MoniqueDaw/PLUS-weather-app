@@ -53,11 +53,11 @@ hr {
   margin: 0 auto;
 }
 
-.current-info .active {
-  color: black;
+.featured-city .current-info .active {
+  color: red;
   cursor: default;
 }
-.current-info .active:hover {
+.featured-city .current-info .active:hover {
   text-decoration: none;
 }
 
