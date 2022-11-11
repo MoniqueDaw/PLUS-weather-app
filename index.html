@@ -12,12 +12,7 @@
     />
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
-      integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -56,12 +51,18 @@
             </div>
           </div>
         </form>
-        <div class="featuredCity">
-          <h1 id="current-city"></h1>
-          <h2 id="current-date"></h2>
-          <ul class="currentInfo">
-            <li id="current-weather-img">☁</li>
-            <li id="temp">23°C</li>
+        <div class="featured-city">
+          <h1 id="city"></h1>
+          <h2 id="date"></h2>
+          <ul class="current-info">
+            <li><img src="" alt="" id="icon" /></li>
+            <li id="temperature">
+              <span class="units"
+                >°C | <a href="#" id="celsius-link" class="active"></a>
+
+                <a href="#" id="fahrenheit-link">°F</a></span
+              >
+            </li>
             <li id="description"></li>
           </ul>
           <div class="current-conditions-group">
@@ -77,8 +78,8 @@
         </div>
       </div>
       <hr />
-      <div class="forcast">
-        <h4>5-day forcast</h4>
+      <div class="forecast">
+        <h4>5-day forecast</h4>
         <div class="row">
           <div class="col-2">
             <div class="card-body">
