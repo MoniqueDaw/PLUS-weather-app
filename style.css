@@ -17,6 +17,13 @@ h2 {
   font-size: 13px;
   font-weight: bold;
 }
+
+h4 {
+  font-size: 25px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
 hr {
   padding: 0;
   margin-top: 30px;
@@ -53,14 +60,6 @@ hr {
   margin: 0 auto;
 }
 
-.featured-city .current-info .active {
-  color: red;
-  cursor: default;
-}
-.featured-city .current-info .active:hover {
-  text-decoration: none;
-}
-
 .current-date {
   font-size: 15px;
   font-weight: 500;
@@ -72,11 +71,25 @@ hr {
   align-items: center;
 }
 
-.forecast {
+.weather-forecast {
   background-color: rgba(131, 193, 193, 0.3);
   padding: 5px 0;
-  padding-bottom: 10px;
 }
+
+.weather-forecast-day {
+  font-size: 19px;
+  font-weight: 400;
+  color: black;
+}
+
+.weather-forecast-temperatures {
+  font-size: 15px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.7;
+}
+
 .footer {
   font-size: 13px;
   color: rgba(0 0 0 0.5);

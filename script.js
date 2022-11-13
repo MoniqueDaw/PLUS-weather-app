@@ -28,7 +28,6 @@ function formatDay(timestamp) {
 }
 
 function displayWeatherCondition(response) {
-  let temp = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -37,8 +36,10 @@ function displayWeatherCondition(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
-  celciusTemperature = response.data.main.temp;
-  temperatureElement.innerHTML = Math.round(celciusTemperature);
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  celsiusTemperature = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -88,25 +89,25 @@ function displayFahrenheitTemperature(event) {
   let temperatureElement = document.querySelector("#temperature");
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
-  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-let celciusTemperature = null;
+let celsiusTemperature = null;
 
-function displayCelciusTemperature(event) {
+function displayCelsiusTemperature(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
 
-  temperatureElement.innerHTML = Math.round(celciusTemperature);
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelciusTemperature);
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchCity("Ottawa");
