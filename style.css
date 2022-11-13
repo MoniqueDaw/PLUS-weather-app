@@ -60,6 +60,17 @@ hr {
   margin: 0 auto;
 }
 
+.featured-city strong {
+  font-size: 25px;
+}
+
+.featured-city .units {
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  top: -10px;
+}
+
 .current-date {
   font-size: 15px;
   font-weight: 500;
