@@ -30,14 +30,13 @@ function formatDay(timestamp) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Thu", "Fri", "Sat", "Sun"];
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
 
   let forecastHTML = `<div class="row">`;
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
-      `
-      <div class="col-2">
+      `<div class="col-2">
       <div class="weather-forecast-day">${day}</div>
             <img
               src="http://openweathermap.org/img/wn/50d@2x.png"
