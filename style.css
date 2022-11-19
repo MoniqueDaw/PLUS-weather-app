@@ -29,7 +29,7 @@ hr {
   margin-top: 30px;
 }
 .container {
-  background-color: rgba(105, 130, 137, 0.5);
+  background-image: linear-gradient(rgb(193, 221, 229), rgb(90, 109, 114));
   border: 2px solid rgb(74, 91, 96);
   border-radius: 10px;
 
@@ -38,17 +38,18 @@ hr {
   padding: 10px 10px;
 }
 
-.city-container {
-  text-align: center;
-  text-decoration: underline;
-  text-decoration-color: blue;
-  padding-bottom: 10px;
+.current-conditions {
+  background-color: rgb(194, 189, 199);
+  padding: 60px 30px;
+  border-radius: 10px;
+  border: 2px solid rgba(74, 91, 96, 0.1);
 }
+
 .current-info {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  padding-bottom: 30px;
+  padding: 30px 0;
 }
 
 .featured-city {
