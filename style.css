@@ -29,7 +29,7 @@ hr {
   margin-top: 30px;
 }
 .container {
-  background-image: linear-gradient(rgb(193, 221, 229), rgb(90, 109, 114));
+  background-image: linear-gradient(rgb(232, 231, 233), rgb(190, 187, 193));
   border: 2px solid rgb(74, 91, 96);
   border-radius: 10px;
 
@@ -39,10 +39,9 @@ hr {
 }
 
 .current-conditions {
-  background-color: rgb(194, 189, 199);
+  background-image: url(images/blue\ with\ brown\ clouds.jpg);
   padding: 60px 30px;
   border-radius: 10px;
-  border: 2px solid rgba(74, 91, 96, 0.1);
 }
 
 .current-info {
@@ -55,8 +54,9 @@ hr {
 .featured-city {
   text-align: center;
   padding: 30px;
+  background-color: rgba(249, 247, 247, 0.3);
   border-radius: 10px;
-  box-shadow: 6px 10px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.2);
   max-width: 500px;
   margin: 0 auto;
 }
@@ -84,8 +84,9 @@ hr {
 }
 
 .weather-forecast {
-  background-color: rgba(131, 193, 193, 0.3);
+  background-color: rgb(165, 162, 167);
   padding: 5px 0;
+  padding-left: 65px;
 }
 
 .weather-forecast-day {
