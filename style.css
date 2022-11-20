@@ -24,13 +24,9 @@ h4 {
   padding-bottom: 20px;
 }
 
-hr {
-  padding: 0;
-  margin-top: 30px;
-}
 .container {
   background-image: linear-gradient(rgb(242, 232, 232), rgb(183, 125, 137));
-  border: 2px solid rgb(74, 91, 96);
+  border: 2px solid rgb(218, 169, 173);
   border-radius: 10px;
 
   max-width: 900px;
@@ -54,7 +50,7 @@ hr {
 .featured-city {
   text-align: center;
   padding: 30px;
-  background-color: rgba(249, 247, 247, 0.3);
+  background-color: rgba(249, 247, 247, 0.255);
   border-radius: 10px;
   box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.2);
   max-width: 500px;
