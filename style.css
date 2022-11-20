@@ -1,6 +1,6 @@
 body {
   margin-top: 40px;
-  background-color: rgb(207, 227, 233);
+  background-color: rgb(248, 232, 234);
 }
 h1,
 h2 {
@@ -29,7 +29,7 @@ hr {
   margin-top: 30px;
 }
 .container {
-  background-image: linear-gradient(rgb(232, 231, 233), rgb(190, 187, 193));
+  background-image: linear-gradient(rgb(242, 232, 232), rgb(183, 125, 137));
   border: 2px solid rgb(74, 91, 96);
   border-radius: 10px;
 
@@ -84,7 +84,7 @@ hr {
 }
 
 .weather-forecast {
-  background-color: rgb(165, 162, 167);
+  background-color: rgb(197, 190, 208);
   padding: 5px 0;
   padding-left: 65px;
 }
